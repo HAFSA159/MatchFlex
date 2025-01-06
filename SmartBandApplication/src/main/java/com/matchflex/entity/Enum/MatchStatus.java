@@ -1,4 +1,5 @@
-package com.smartband.SmartBandApplication.entity.Enum;
+package com.matchflex.entity.Enum;
 
-public class MatchStatus {
+public enum MatchStatus {
+    SCHEDULED, ONGOING, COMPLETED
 }

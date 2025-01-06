@@ -1,7 +1,6 @@
-package com.smartband.SmartBandApplication.entity.Enum;
+package com.matchflex.entity.Enum;
+
 
 public enum BandStatus {
-    ACTIVE,
-    INACTIVE,
-    SUSPENDED
+    ACTIVE, INACTIVE, SUSPENDED
 }

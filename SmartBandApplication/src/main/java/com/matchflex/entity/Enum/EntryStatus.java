@@ -1,4 +1,6 @@
-package com.smartband.SmartBandApplication.entity.Enum;
+package com.matchflex.entity.Enum;
 
-public class EntryStatus {
+
+public enum EntryStatus {
+    GRANTED, DENIED
 }

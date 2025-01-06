@@ -1,10 +1,10 @@
-package com.smartband.SmartBandApplication.entity;
+package com.matchflex.entity;
 
-import com.smartband.SmartBandApplication.entity.Enum.BandStatus;
+import com.matchflex.entity.Enum.BandStatus;
 import jakarta.persistence.*;
 import lombok.Data;
-
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Data
 @Entity
@@ -14,26 +14,18 @@ public class SmartBand {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long bandId;
 
-    @Column(unique = true)
     private String serialNumber;
-
     private LocalDateTime activationTime;
 
     @Enumerated(EnumType.STRING)
     private BandStatus status;
 
-//    @OneToMany(mappedBy = "smartBand", cascade = CascadeType.ALL)
-//    private List<MatchPackage> assignedPackages;
-//
-//    @OneToOne
-//    @JoinColumn(name = "user_id")
-//    private User owner;
+    @OneToOne
+    @JoinColumn(name = "user_id")
+    private User owner;
 
-    // Constructors
-    public SmartBand() {}
-
-    public SmartBand(String serialNumber) {
-        this.serialNumber = serialNumber;
-        this.status = BandStatus.INACTIVE;
-    }
+    @OneToMany(mappedBy = "smartBand")
+    private List<MatchPackage> assignedPackages;
 }
+
+

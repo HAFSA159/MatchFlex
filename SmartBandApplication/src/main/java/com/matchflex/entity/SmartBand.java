@@ -1,11 +1,10 @@
-package com.smartband.SmartBandApplication.model;
+package com.smartband.SmartBandApplication.entity;
 
-import com.smartband.SmartBandApplication.model.Enum.BandStatus;
+import com.smartband.SmartBandApplication.entity.Enum.BandStatus;
 import jakarta.persistence.*;
 import lombok.Data;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 @Data
 @Entity

@@ -1,4 +1,4 @@
-package com.smartband.SmartBandApplication.model.Enum;
+package com.smartband.SmartBandApplication.entity.Enum;
 
 public enum BandStatus {
     ACTIVE,

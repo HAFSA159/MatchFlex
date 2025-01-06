@@ -1,4 +1,4 @@
-package com.smartband.SmartBandApplication.service;
+package com.matchflex.service;
 
 public class AbonnementPlanService {
 }

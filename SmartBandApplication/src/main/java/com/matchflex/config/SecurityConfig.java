@@ -1,4 +1,4 @@
-package com.smartband.SmartBandApplication.config;
+package com.matchflex.config;
 
 public class SecurityConfig {
 }

@@ -1,4 +1,4 @@
-package com.smartband.SmartBandApplication.controller;
+package com.matchflex.controller;
 
 public class MatchPackageController {
 }

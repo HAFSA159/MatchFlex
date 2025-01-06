@@ -1,4 +1,4 @@
-package com.smartband.SmartBandApplication.exception;
+package com.matchflex.exception;
 
 public class BadRequestException {
 }
